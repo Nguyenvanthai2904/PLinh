@@ -20,17 +20,43 @@
         padding: 40px;
         margin: 100px auto;
         }
+            #videoContainer {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Chỉnh kích thước tối đa của video */
+            overflow: hidden; /* Ẩn phần ngoài giới hạn của video */
+        }
+
+        #videoBackground {
+            width: 100%;
+            height: 30%;
+            display: block;
+            margin: 0 auto; /* Căn giữa video trong container */
+        }
+
+        #videoOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(phuonglinh.jpg) center/cover no-repeat;
+            z-index: 1;
+        }
     </style>
 <!--         <audio hidden autoplay loop preload="" >
             <source src="so-cute.mp3" type="audio/mp3">
             <source src="so-cute.wav" type="audio/mp3">
         </audio>
      -->
-
+<div id="videoContainer">
+      <div id="videoOverlay"></div>
+      <video id="videoBackground" src="catcute.mp4" autoplay loop ></video>
+  </div>
 
        
        <img src="https://c.tenor.com/3RkBSAwE4xgAAAAj/quby-pentol.gif"/>
-         <video src="so-cute.mp3" onclick="this.play();"></video>
+<!--          <video src="so-cute.mp3" onclick="this.play();"></video> -->
        <p style="color: white"> 8/3/2024 và tôi muốn gửi đến em vài lời.</p>
        
        <img src="https://c.tenor.com/1UoL-HJFGDAAAAAj/pentol-stiker-pentol.gif">
