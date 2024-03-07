@@ -21,10 +21,21 @@
         margin: 100px auto;
         }
     </style>
-        <audio hidden autoplay loop preload="" >
+<!--         <audio hidden autoplay loop preload="" >
             <source src="so-cute.mp3" type="audio/mp3">
             <source src="so-cute.wav" type="audio/mp3">
-        </audio>
+        </audio> -->
+        html
+<audio id="myAudio">
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  const audio = document.getElementById('myAudio');
+  audio.autoplay = true;
+  audio.load();
+</script>
+
        
        <img src="https://c.tenor.com/3RkBSAwE4xgAAAAj/quby-pentol.gif"/>
        <p style="color: white"> 8/3/2024 và tôi muốn gửi đến em vài lời.</p>
